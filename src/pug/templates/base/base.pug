@@ -1,0 +1,37 @@
+include ../../mixins/index
+<!DOCTYPE html>
+html(lang='ru')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="theme-color" content="#8F67A4")
+
+    link(
+      rel="stylesheet",
+      type="text/css",
+      media="all",
+      href='../../../static/css/style.css'
+    )
+    link(
+      rel="icon",
+      href='../../../static/img/favicon.ico',
+      type="image/x-icon"
+    )
+
+  body
+    #app
+      block header
+   
+      block content
+
+      block text
+        
+      block footer
+        include ./footer
+      block copyright
+        include ./copyright
+
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAq4JCX3T23IUj32KRtJsrC5xzN0YDy7zM&callback=initMap')
+    script(type="text/javascript", src='../../../static/js/vendor.js')
+    script(type="text/javascript", src='../../../static/js/main.js')

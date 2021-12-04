@@ -1,0 +1,24 @@
+.product-cards 
+  bg-color: var(--theme-accent-main)
+
+.product-cards-wrapper
+  &__
+    &row
+      d: flex
+      ai: center
+      jc: space-between
+      flex-wrap: wrap
+
+      +mq-lg
+        ma: 0 -5px
+    
+    &cols
+      w: 100%
+      pa: 0 5px 45px
+
+      +mq-sm
+        w: 50%
+        pa: 0 15px 45px
+
+      +mq-lg
+        w: 25%

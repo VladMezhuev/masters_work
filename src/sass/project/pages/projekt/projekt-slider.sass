@@ -1,0 +1,29 @@
+.projekt-slider
+  pos: relative
+  d: flex
+  ai: center
+  &__
+    &projekt-slider-wrapper
+      h: 400px
+
+      +mq-lg
+        h: 700px
+
+.projekt-slider-bg
+  pos: absolute !important
+  h: 100%
+
+.projekt-slider-navigation 
+  pos: relative
+  d: flex
+  ai: center
+  jc: space-between
+
+  .projekt-control
+    pos: relative
+    z-index: 10
+    cursor: pointer
+    d: none
+
+    +mq-xl
+      d: block

@@ -1,0 +1,71 @@
+.product
+  &__
+    &image-wrapper
+      d: block
+      h: 311px
+      w: 100%
+      pos: relative
+      d: flex
+      ai: center
+      overflow: hidden
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          .product
+            &__
+              &overlay
+                h: 100%
+              
+              &tag
+                fs: 11px
+              
+              &image
+                tans: scale(1.2)
+
+
+    &overlay
+      pos: absolute
+      top: 0
+      left: 0
+      w: 100%
+      h: 0px
+      bg-color: rgba(0, 0, 0, 0.71)
+      tr: .3s
+      d: flex
+      ai: center
+      justify-content: center
+
+    &image
+      tr: .3s
+
+      
+
+    &tag
+      fs: 0px
+      ml: 20px
+      color: var(--theme-text-1)
+      text-tans: uppercase
+      fw: 700
+      tr: .3s
+      pos: relative
+
+      &::after
+        content: ""
+        pos: absolute
+        bottom: -5px
+        left: 0
+        h: 1px
+        w: 0px
+        bg-color: var(--theme-accent-main)
+        tr: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          &::after
+            w: 100%
+
+    &title
+      td: none
+      color: var(--theme-text-7)
+      fs: $type-font-size-md
+      fw: 700

@@ -1,0 +1,28 @@
+.btn
+  d: inline-flex
+  align-items: center
+  justify-content: space-between
+  text-align: center
+  background-color: var(--theme-accent-grey)
+  fs: 15px
+  fw: 400
+  color: var(--theme-text-1)
+  text-transform: uppercase
+  transition: .3s
+  border: 0
+  text-decoration: none
+
+  @media (hover: hover) and (pointer: fine)
+    &:hover
+      bg-color: var(--theme-accent-dark)
+
+.button
+  w: 100%
+  h: 57px
+  padding: 21px 23px
+  text-decoration: none
+
+  &__
+    &image
+      transform: rotate(90deg)
+      

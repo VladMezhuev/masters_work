@@ -1,0 +1,84 @@
+.new-form-wrapper
+  bg-color: var(--theme-accent-white)
+  pa: 10px 10px 15px
+  mb: 40px
+
+  +mq-lg
+    pa: 30px 30px 45px
+
+
+  &__
+    &title
+      mb: 20px
+
+    &info
+      color: #5a5a5a
+      ta: center
+
+      +mq-lg
+        ta: left
+      
+
+.new-form
+  mt: 30px
+  d: flex
+  flex-direction: column
+
+  &__
+    &top
+      d: flex
+      ai: center
+      flex-direction: column
+      mb: 15px
+
+      +mq-lg
+        ma: 0 -10px 15px
+        flex-direction: row
+        jc: space-between
+
+    
+    &column
+      w: 100%
+      pos: relative
+
+      +mq-lg
+        pa: 0 10px
+        w: 50%
+
+    &input
+      w: 100%
+      h: 57px
+      bg-color: var(--theme-accent-main)
+      pa: 10px
+      outline: none
+      border: none
+      fs: 15px
+      fw: 400
+      color: #595959
+      mt: 20px
+      pos: relative
+      
+
+      +mq-lg
+        mb: 0px
+        pa: 20px
+
+      &--kom
+        h: 123px
+        resize: none
+
+    &middle
+      mb: 27px
+      pos: relative
+
+    &bottom
+      w: 100%
+      +mq-lg
+        w: 50%
+        align-self: flex-end
+    
+    &submit
+      w: 100%
+      h: 57px
+      jc: center
+      

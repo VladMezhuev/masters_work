@@ -1,0 +1,66 @@
+.category-info
+  d: flex
+  ai: center
+  mt: 55px
+  flex-direction: column
+  z-index: 1
+
+  +mq-lg
+    flex-direction: row
+    jc: space-between
+
+
+  &__
+    &title
+      fw: 300
+      fs: 30px
+
+      +mq-lg
+        fs: 50px
+    
+    &subcategory-wrapper
+      d: flex
+      ai: center
+      flex-direction: column
+
+      +mq-lg
+        flex-direction: row
+    
+    &subcategory
+      td: none
+      fs: 25px
+      ft: uppercase
+      fw: 300
+      color: var(--theme-text-1)
+      ml: 0px
+      pos: relative
+      tr: .3s
+
+      +mq-lg
+        ml: 30px
+
+      &--active
+        fw: 700
+
+        &::before
+          content: ""
+          pos: absolute
+          left: 0
+          bottom: -10px
+          w: 100%
+          h: 2px
+          bg-color: var(--theme-accent-white)
+      
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          fw: 700
+
+          &::before
+            content: ""
+            pos: absolute
+            left: 0
+            bottom: -10px
+            w: 100%
+            h: 2px
+            bg-color: var(--theme-accent-white)
+      

@@ -1,0 +1,80 @@
+.main-slider
+  pos: relative
+  w: 100%
+  h: 633px
+
+.slider-bg
+  pos: absolute !important
+  h: 100%
+
+.main-content
+  pos: relative
+  h: 100%
+  d: flex
+  ai: center
+  jc: space-between
+  z-index: 2
+
+  &__
+    &text
+      fw: 300
+      ft: uppercase
+      color: white
+      opacity: .8
+      ta: center
+      text-shadow: 1px 1px 2px black
+
+      +mq-lg
+        ta: left
+        w: 700px
+
+.main-slider-nav
+  pos: relative
+  d: none
+
+  +mq-xl
+    d: flex
+    flex-direction: column
+    ai: flex-end
+
+  &__
+    &prev
+      mb: 20px
+
+.main-control
+  w: 11px
+  h: 16px
+  cursor: pointer
+
+.swiper-pagination
+  d: flex
+  flex-direction: column
+
+  .swiper-pagination-bullet
+    d: flex
+    ai: center
+    jc: flex-end
+    mb: 20px
+
+    .line
+      w: 15px
+      h: 2px
+      bg-color: var(--theme-accent-white)
+      opacity: 0.28
+
+    .number
+      opacity: 0
+      fs: 15px
+
+  .swiper-pagination-bullet-active
+    d: flex
+    ai: center
+    jc: flex-end
+
+    .line
+      w: 27px
+      opacity: 1
+      ml: 10px
+
+    .number
+      opacity: 1

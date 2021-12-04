@@ -1,0 +1,39 @@
+.pagitation 
+  pa: 20px 0 95px
+  &__
+    &list
+      d: flex
+      ai: center
+
+    &item
+      w: 42px
+      h: 42px
+      bg-color: transparent
+      d: flex
+      ai: center
+      jc: center
+      mr: 10px
+      cursor: pointer
+      tr: .3s
+
+      &.is-active
+        bg-color: var(--theme-accent-dark)
+        .pagitation 
+          &__
+            &element
+              color: var(--theme-text-1)
+
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          bg-color: var(--theme-accent-dark)
+          .pagitation 
+            &__
+              &element
+                color: var(--theme-text-1)
+    
+    &element
+      color: var(--theme-text-7)
+      fs: 15px
+      fw: 700
+      tr: .3s

@@ -1,0 +1,93 @@
+.error-404
+  pos: relative
+  h: calc( 100vh - 72px )
+  w: 100%
+  d: flex
+  ai: center
+
+  +mq-lg
+    h: 828px
+  &__
+    &bg-wrapper  
+      pos: absolute
+      top: 0
+      left: 0
+      w: 100%
+      h: 100%
+
+  .g-container
+    pos: relative
+    d: flex
+    ai: center
+    w: 100%
+
+    +mq-lg
+      jc: flex-end
+
+
+.oops-info 
+  color: var(--theme-text-1)
+  d: flex
+  flex-direction: column
+  align-self: flex-end
+  &__
+    &title
+      fs: 30px
+      fw: 300
+      ta: center
+
+      +mq-lg
+        ta: left
+        fs: 50px
+
+    &subtitle
+      fs: 20px
+      fw: 300
+      mt: 15px
+      ta: center
+
+      +mq-lg
+        ta: left
+        fs: 20px
+    
+    &search-form-wrapper 
+      mt: 28px
+
+.form-404
+  d: flex
+  ai: center
+
+
+  &__
+    &input
+      w: 200px
+      h: 57px
+      outline: none
+      br: none
+      pa: 22px
+      fs: $type-font-size-md
+      fw: 400
+      color: var(--theme-text-4)
+
+      +mq-sm
+        w: 300px
+
+      +mq-md
+        w: 350px
+
+      +mq-lg
+        w: 450px
+
+      +mq-xl
+        w: 525px
+    
+    &btn
+      w: 100px
+      h: 57px
+      jc: center
+
+      +mq-sm
+        w: 150px
+
+      +mq-xl
+        w: 200px

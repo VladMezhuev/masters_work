@@ -1,0 +1,25 @@
+.language-block 
+  d: none
+
+  +mq-lg
+    d: block
+
+  &__
+    &language
+      ft: uppercase
+      color: var(--theme-text-1)
+      td: none
+      tr: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-3)
+
+      &--active
+        color: var(--theme-text-3)
+
+    &line
+      ma: 0 10px
+    
+  &--menu
+    d: flex

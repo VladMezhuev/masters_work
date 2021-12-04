@@ -1,0 +1,44 @@
+include ../../mixins/index
+
+
+
++b(class=headerMain ? 'header-block--trans' : 'header-block--white').HEADER 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.header 
+      +e.logo-wrapper.A(href="../main/main.html")
+        +e.logo.img.IMG(src="../../../static/img/main-page/logo.png")
+
+      +b.menu-icon#js-trigger
+        +e.line.--top.SPAN
+        +e.line.--middle.SPAN
+        +e.line.--bottom.SPAN
+
+      +b.menu.NAV 
+        +b.language-block
+          +e.language.--active.text.--xs.--medium.A(href="#") uk
+          +e.line.text.--xs.--medium.SPAN |
+          +e.language.text.--xs.--medium.A(href="#") ru
+        +e.body#js-menu
+          +e.list.UL 
+            +b.language-block.--menu
+              +e.language.--active.text.--xs.--medium.A(href="#") uk
+              +e.line.text.--xs.--medium.SPAN |
+              +e.language.text.--xs.--medium.A(href="#") ru
+            +e.item.LI
+              +e.link.A(href="../uber-uns/uber-uns.html") Про нас
+            +e.item.LI
+              +e.link.A(href="../produkte/produkte.html") Завдання
+            +e.item.LI
+              +e.link.A(href="../projekte/projekte.html") Роботи
+            +e.item.LI
+              +e.link.A(href="../news/news.html") Новини
+        +e.social-links 
+          +e.search.js-search.IMG(src="../../../static/icons/search.svg")
+          +e.social-link.social-link.A(href="#")
+            +e.search-image.img.IMG(src="../../../static/icons/facebook.svg")
+          +e.social-link.social-link.A(href="#")
+            +e.search-image.img.IMG(src="../../../static/icons/ints.svg")
+      +b.header-search.FORM(action='../search/search.html')
+        +e.input.js-input.INPUT(type='search' placeholder='Search')
+        +e.button.icon.BUTTON(type="submit")
+          +e.search.js-button.IMG(src="../../../static/icons/search.svg")

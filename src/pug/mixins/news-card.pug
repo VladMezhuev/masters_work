@@ -1,0 +1,9 @@
+mixin productsCard(data = [])
+  +b.product
+    +e.image-wrapper.A(href="#")
+      +e.image.img.IMG(src="../../../static/img/news-page/products/" + data.image)
+      +e.overlay 
+        +e.tag.SPAN tag1
+        +e.tag.SPAN tag2
+        +e.tag.SPAN tag3
+    +e.title.A(href="#")= data.title

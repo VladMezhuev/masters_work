@@ -1,0 +1,89 @@
+include ../../../mixins/news-cards
+include ../../../mixins/index
+
+-
+  const newsCards = [
+    [{
+      name: "Новина 1",
+      image: "news/news1.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 2",
+      image: "news/news2.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 3",
+      image: "news/news3.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+  ]
+
++b.nachrichtentitel.SECTION 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.nachrichtentitel-wrapper 
+      +e.row
+        +e.column.--main
+          +b.nachrichtentitel-main-content
+            +e.preview-wrapper 
+              +e.preview.img.IMG(src="../../../static/img/news/new-card.png")
+            +e.text-wrapper
+              +e.main-title.H2 Lorem ipsum dolor sit amet, in has dico nulla indoctum 
+              +e.text.text.--xs.--medium.P duo tibique perfecto liberavisse ex. Id postea doming utamur qui. Mea labore viderer gloriatur cu, iriure principes ne qui. Tempor maiestatis duo ei, cum vero utinam reprimique an. Has mollis volutpat et. An placerat adipisci his, cibo efficiantur his ut.
+              +e.text.text.--xs.--medium.P Augue civibus nam ad. Duo no quod homero discere. Per quot tollit signiferumque in, mea cu congue malorum adipiscing, sit eu vidit dictas. Nonumes definiebas in nam, hinc dicat est eu. Vel ne officiis recusabo. An his primis fabulas. Adipisci partiendo ne sea. #[A(href="#").nachrichtentitel-main-content__read-more Reade more]
+            include ../../components/table
+          +b.nachrichtentitel-main-content
+            +e.text-wrapper.--pad.--line
+              +e.text.text--xs.--medium.P Tempor maiestatis duo ei, cum vero utinam reprimique an. Has mollis volutpat et. An placerat adipisci his, cibo efficiantur his ut.Augue civibus nam ad. Duo no quod homero discere. Per quot tollit signiferumque in, mea cu congue malorum adipiscing, sit eu vidit dictas. Nonumes definiebas in nam,
+            +e.text-wrapper
+              +e.sub-title.H3 Lorem ipsum dolor sit amet, in has dico nulla indoctum
+              +e.text.text--xs.--medium.P duo tibique perfecto liberavisse ex. Id postea doming utamur qui. Mea labore viderer gloriatur cu, iriure principes ne qui. Tempor maiestatis duo ei, cum vero utinam reprimique an. Has mollis volutpat et. An placerat adipisci his, cibo efficiantur his ut.
+              +e.text.text--xs.--medium.P Augue civibus nam ad. Duo no quod homero discere. Per quot tollit signiferumque in, mea cu congue malorum adipiscing, sit eu vidit dictas. Nonumes definiebas in nam, hinc dicat est eu. Vel ne officiis recusabo. An his primis fabulas. 
+            +e.text-wrapper.--pad.--square
+                +e.text.text--xs.--medium.P Augue civibus nam ad. Duo no quod homero discere. Per quot tollit signiferumque in, mea cu congue malorum adipiscing, sit eu vidit dictas. Nonumes definiebas in nam, hinc dicat est eu. Vel ne officiis recusabo. An his primis fabulas. Adipisci partiendo ne sea. 
+                +e.text.text--xs.--medium.P Liber eloquentiam eos te, ad discere volutpat mnesarchum est. Ei est mutat mazim primis. An mea mucius utroque, quando nominavi scaevola ad duo. Est cu wisi facer aliquip, in vim mucius docendi ancillae. Duo id volumus persecuti. Platonem scripserit in nec. Vitae audiam ocurreret mei ex.
+                +e.text.text--xs.--medium.P Usu cu luptatum reprehendunt, viris delenit an his, molestie fabellas te eam. Eos eu quando honestatis, solum dolorum petentium cum ea, cu sit appetere pericula. An nam justo legere assueverit, ut eum
+            +e.text-wrapper
+              +e.sub-title.H3 Lorem ipsum dolor sit amet, in has dico nulla indoctum
+              +e.text.text--xs.--medium.P duo tibique perfecto liberavisse ex. Id postea doming utamur qui. Mea labore viderer gloriatur cu, iriure principes ne qui. Tempor maiestatis duo ei, cum vero utinam reprimique an. Has mollis volutpat et. An placerat adipisci his, cibo efficiantur his ut.
+              +e.text.text--xs.--medium.P Augue civibus nam ad. Duo no quod homero discere. Per quot tollit signiferumque in, mea cu congue Liber eloquentiam eos te, ad discere volutpat mnesarchum est. Ei est mutat mazim primis. An mea mucius utroque, quando nominavi scaevola ad duo. Est cu wisi facer aliquip, in vim mucius docendi ancillae. Duo id volumus persecuti. Platonem scripserit in nec. Vitae audiam ocurreret mei ex.
+            +e.text-wrapper.--pad.--number
+              +e.text.--one.text--xs.--medium.P Augue civibus nam ad. Duo no quod homero discere. Per quot tollit signiferumque in, mea cu congue malorum adipiscing, sit eu vidit dictas. Nonumes definiebas in nam, hinc dicat est eu. Vel ne officiis recusabo. An his primis fabulas. Adipisci partiendo ne sea. 
+              +e.text.--two.text--xs.--medium.P Liber eloquentiam eos te, ad discere volutpat mnesarchum est. Ei est mutat mazim primis. An mea mucius utroque, quando nominavi scaevola ad duo. Est cu wisi facer aliquip, in vim mucius docendi ancillae. Duo id volumus persecuti. Platonem scripserit in nec. Vitae audiam ocurreret mei ex.
+              +e.text.--three.text--xs.--medium.P Usu cu luptatum reprehendunt, viris delenit an his, molestie fabellas te eam. Eos eu quando honestatis, solum dolorum petentium cum ea, cu sit appetere pericula. An nam justo legere assueverit, ut eum
+            include ../../elements/tags
+            +b.last-review 
+              +e.top 
+                +e.title.block-title.H2 3 коментарі з новини
+              +e.review-wrapper 
+                +b.review-card
+                  +e.persone-info
+                    +e.persone 
+                      +e.persone-photo.img.IMG(src="../../../static/img/new/persone1.png")
+                  +e.review-text 
+                    +e.persone-name.SPAN Oliver Rice
+                    +e.time.text.--xs.--medium.SPAN sagt: 27.08.2018 um 13:49 Uhr
+                    +e.review.text.--xs.--medium.P Id postea doming utamur qui. Mea labore viderer gloriatur cu, iriure principes ne qui. Tempor maiestatis duo ei, cum vero utinam reprimique an. Has mollis volutpat et. An placerat adipisci his, cibo efficiantur his ut.
+
+                +b.review-card
+                  +e.persone-info
+                    +e.persone 
+                      +e.persone-photo.img.IMG(src="../../../static/img/new/persone2.png")
+                  +e.review-text 
+                    +e.persone-name.SPAN Adela Butler 
+                    +e.time.text.--xs.--medium.SPAN sagt: 27.08.2018 um 13:49 Uhr
+                    +e.review.text.--xs.--medium.P Id postea doming utamur qui. Mea labore viderer gloriatur cu, iriure principes ne qui. Tempor maiestatis duo ei, cum vero utinam reprimique an. Has mollis volutpat et. An placerat adipisci his, cibo efficiantur his ut.
+
+            +b.new-form-wrapper
+              +e.title.block-title.H2 Коментарі
+              +e.info.text.--xs.--medium.P Ваша електронна адреса не буде опублікована. Обов'язкові поля позначені *.
+              include ../../components/new-form
+
+        +e.column.--side
+          +e.sidebar
+            each item in newsCards
+              +newsCards(item)

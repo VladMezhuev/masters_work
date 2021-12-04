@@ -1,0 +1,38 @@
+.category
+  pos: relative
+  h: auto
+  w: 100%
+  ma: 0
+  pb: 56px
+
+  &__
+    &bg
+      pos: absolute
+      top: 0
+      left: 0
+
+.category-wrapper
+  pt: 22px
+  pos: relative
+
+.category-info
+  &__
+    &categoty
+      d: flex
+      flex-direction: column
+
+    &info-wrapper
+      d: flex
+      flex-direction: column
+      ai: center
+
+      +mq-lg
+        flex-direction: row
+    
+    &info
+      mt: 20px
+      mr: 15px
+      fs: 12px
+
+      &:last-child
+        mr: 0

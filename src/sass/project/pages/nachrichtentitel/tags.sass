@@ -1,0 +1,37 @@
+.tags-wrapper
+  bg-color: var(--theme-accent-white)
+  d: flex
+  ai: center
+  w: 100%
+  pa: 30px
+  mt: 50px
+  flex-direction: column
+
+  +mq-xl
+    flex-direction: row
+    jc: space-between
+
+
+  &__
+    &title
+      color: var(--theme-text-7)
+      fw: 700
+      fs: 20px
+    
+    &tags
+      d: flex
+      jc: space-between
+      ai: center
+      flex-wrap: wrap
+      mt: 15px
+
+      +mq-xl
+        mt: 0
+
+    &tag
+      ft: uppercase
+      color: var(--theme-text-3)
+      mr: 15px
+
+      &:last-child
+        mr: 0

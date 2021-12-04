@@ -1,0 +1,39 @@
+.search-section-wrapper
+  pos: relative
+  &__
+    &top
+      z-index: 2
+
+.search-part
+  w: 100%
+  h: 57px
+  d: flex
+  ai: center
+  mb: 50px
+  mt: -57px
+
+
+  &__
+    &input
+      w: 70%
+      h: 100%
+      outline: none
+      br: none
+      pa: 23px 10px 23px 33px
+      fs: 15px
+      fw: 400
+      color: var(--theme-text-4)
+
+      +mq-md
+        w: 85%
+    
+
+    &btn
+      w: 30%
+      h: 100%
+      jc: center
+      cursor: pointer
+
+      +mq-md
+        w: 15%
+

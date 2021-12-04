@@ -1,0 +1,16 @@
+extends ../../base/base
+
+block header 
+  -
+    const headerMain = true
+
+  include ../../base/header
+block content 
+  +b.main.MAIN
+    include ../../../mixins/index
+    include ../../components/main-slider
+    include ../../sections/main/cube
+    include ../../sections/main/email-form
+
+block text 
+  include ../../base/text

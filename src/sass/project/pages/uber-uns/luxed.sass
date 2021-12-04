@@ -1,0 +1,164 @@
+.luxed
+  bg-color: var(--theme-accent-main)
+
+.luxed-wrapper
+  bg-color: var(--theme-accent-white)
+  color: var(--theme-text-3)
+  pos: relative
+  pa: 20px 5px
+
+  +mq-lg
+    pa: 50px 20px
+
+  +mq-xl
+    pa: 75px 45px
+
+  &__
+    &bg-image
+      pos: absolute
+      top: 50%
+      left: 50%
+      trans: translate(-50%, -50%)
+      z-index: 1
+
+    &top, &middle, &bottom
+      pos: relative
+      d: flex
+      ai: center
+      z-index: 2
+      flex-direction: column
+
+      +mq-lg
+        flex-direction: row
+
+    &top, &bottom
+      +mq-lg
+        jc: space-between
+
+    &top
+      +mq-lg
+        ai: flex-start
+
+    &bottom
+      +mq-lg
+        ai: flex-end
+        mt: 20px
+
+    &middle
+      +mq-lg
+        jc: center
+        opacity: 0
+
+    &image-wrapper
+      ma: 10px 0px
+
+      &--
+        &l
+          w: 65px
+          h: 87px
+          mt: 0px
+        &u
+          w: 70px
+          // h: 89px
+          mt: 0px
+        &x
+          w: 96px
+          h: 88px
+
+        &e
+          w: 73px
+          h: 87px
+          mb: 0px
+        &d
+          w: 70px
+          // h: 86px
+          mb: 0px
+
+    &element-wrapper
+      d: flex
+      flex-direction: column-reverse
+
+      +mq-md
+        flex-direction: row-reverse
+        ai: center
+
+        +mq-lg
+          ai: flex-start
+
+      &--
+        &l, &e
+
+          +mq-lg
+            flex-direction: row
+        &u, &d
+
+          +mq-lg
+            flex-direction: row-reverse
+        &x
+
+          +mq-lg
+            flex-direction: column-reverse
+            ai: center
+
+        &e, &d
+
+          +mq-lg
+            ai: flex-end
+
+    &text-part
+      w: 100%
+
+      +mq-md
+        w: 85%
+
+      +mq-lg
+        w: 230px
+
+      &--
+        &x
+
+          +mq-lg
+            w: 425px
+            ta: center
+            mt: 10px
+
+        &l, &e
+
+          +mq-lg
+            ta: right
+            mr: 40px
+
+        &u, &d
+
+          +mq-lg
+            ta: left
+            ml: 40px
+
+    &letter-wrapper
+      d: flex
+      flex-direction: column
+      ai: flex-start
+      w: 15%
+
+      +mq-lg
+        ta: center
+      &--
+        &l, &u, &x
+
+          +mq-lg
+            flex-direction: column
+
+        &e, &d
+
+          +mq-lg
+            flex-direction: column-reverse
+
+        &x
+
+          +mq-lg
+            ai: center
+
+    &name
+      fs: 20px
+      fw: 500
+      color: var(--theme-text-8)

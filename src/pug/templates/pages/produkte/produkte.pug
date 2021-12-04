@@ -1,0 +1,80 @@
+extends ../../base/base
+
+
+block header 
+  include ../../base/header
+
+block content 
+  +b.main.MAIN
+    include ../../../mixins/category
+    include ../../../mixins/index
+    include ../../../mixins/product-section
+    -
+      const breadcrumbs = ['Home', 'Some page', 'Some page 2'],
+            category = 'Завдання',
+            info = [],
+            subcategory = ['Теорiя', 'Практика'],
+            image = 'produkts.png'
+
+    +category(breadcrumbs, category, info, subcategory, image)
+    include ../../sections/products/about-product
+    - 
+      const productCards = [
+        {
+          image: "product1.png",
+          title: "Практична робота №1",
+        },
+        {
+          image: "product2.png",
+          title: "Практична робота №2",
+        },
+        {
+          image: "product3.png",
+          title: "Практична робота №3",
+        },
+        {
+          image: "product4.png",
+          title: "Практична робота №4",
+        },
+        {
+          image: "product5.png",
+          title: "Практична робота №5",
+        },
+        {
+          image: "product6.png",
+          title: "Практична робота №6",
+        },
+        {
+          image: "product7.png",
+          title: "Практична робота №7",
+        },
+        {
+          image: "product8.png",
+          title: "Практична робота №8",
+        },
+      ]
+    +productSection(productCards)
+    include ../../sections/products/about-product
+    - 
+      const productCards2 = [
+        {
+          image: "product1.png",
+          title: "Практична робота №1",
+        },
+        {
+          image: "product2.png",
+          title: "Практична робота №2",
+        },
+        {
+          image: "product3.png",
+          title: "Практична робота №3",
+        },
+        {
+          image: "product4.png",
+          title: "Практична робота №4",
+        },
+      ]
+    +productSection(productCards2)
+
+block text 
+  include ../../base/text

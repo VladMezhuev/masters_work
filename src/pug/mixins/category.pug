@@ -1,0 +1,23 @@
+include ./../../../node_modules/bemtopuginvue/bemto.pug
+
+mixin category(breadcrumbs = [], name = 'Main', info = [], subcategory = [], image = 'produkts.png')
+  +b.category.SECTION
+    +e.bg.img.--bg.IMG(src='../../../static/img/categories/' + image)
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+      +b.category-wrapper
+        +b.breadcrumbs
+          +e.list.UL 
+            each item in breadcrumbs
+              +e.item.LI
+                +e.link.text.--medium.A(href="#")= item
+                +e.slash.SPAN /
+        +b.category-info
+          +e.category
+            +e.title.text.H2= name
+            +e.info-wrapper
+              each item in info
+                +e.info.text.--medium.SPAN= item
+          +e.subcategory-wrapper 
+            each item in subcategory
+              +e.subcategory.text.A(href="#")= item
+            

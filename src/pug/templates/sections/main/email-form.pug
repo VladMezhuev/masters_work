@@ -1,0 +1,24 @@
+include ../../../mixins/index
+
++b.email-form.SECTION 
+  +e.bg.img.IMG(src="../../../static/img/main-page/join-bg.png")
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.email-form-wrapper 
+      +e.text.text.--3xl.--medium.SPAN Пiдписатись на новини
+      +b.form-wrapper.js-form.FORM(
+        data-method='POST', 
+        data-action='https://httpbin.org/post'
+        novalidate
+      )
+        +e.input.INPUT(
+          type="email" 
+          id="email-form" 
+          name="email-form"
+          data-rule="required|email"
+        )
+        +e.submit.btn.BUTTON(
+          type="submit"
+        )
+          +e.join.SPAN join 
+          +e.image-wrapper 
+            +e.image.img.IMG(src="../../../static/icons/arrow-prev.svg")

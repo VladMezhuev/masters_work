@@ -1,0 +1,38 @@
+.filter-control-bar
+  pos: absolute
+  top: -35px
+  z-index: 2
+  w: 100%
+  
+
+.filter-control-bar-wrapper
+  bg-color: var(--theme-accent-white)
+  pa: 25px 30px
+  d: flex
+  ai: center
+  flex-wrap: wrap
+
+  &__
+    &list
+      w: 100%
+      d: flex
+      ai: center
+      jc: space-between
+      flex-wrap: wrap
+
+    &item
+      pa: 5px
+
+    &filter-control
+      color: var(--theme-text-7)
+      cursor: pointer
+      fs: $type-font-size-md
+      fw: 300
+      tr: .3s
+
+      &.is-active
+        fw: 700
+      
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          fw: 700

@@ -1,0 +1,10 @@
+extends ../../base/base
+
+block header 
+  include ../../base/header
+
+block content 
+  +b.main.MAIN
+    include ../../../mixins/index
+
+    include ../../sections/projekt/projekt

@@ -1,0 +1,215 @@
+.header-block
+  br-bottom: 1px solid rgba(246, 247, 249, .1)
+  pa: 0 10px
+  z-index: 111
+
+  &--
+    &white
+      pos: relative
+      bg-color: var(--theme-accent-white)
+
+      .header
+        &__
+          &logo-wrapper
+            filter: brightness(0)
+
+      .menu
+        &__
+          &search, &social-link
+            filter: brightness(0)
+      .language-block
+        &__
+          &language, &line
+            color: black
+
+    &trans
+      pos: fixed
+      top: 0
+      right: 0
+      left: 0
+      bg-color: var(--theme-accent-white)
+
+      +mq-lg
+        bg-color: transparent
+
+.header
+  w: 100%
+  h: 72px
+  d: flex
+  ai: center
+  jc: space-between
+
+  +mq-lg
+    h: 106px
+
+  &__
+    &logo-wrapper
+      order: 2
+      w: 130px
+      h: 40px
+      filter: brightness(0)
+
+      +mq-lg
+        filter: brightness(10)
+
+.menu
+  d: flex
+  ai: center
+  jc: space-between
+  order: 2
+
+
+  +mq-lg
+    w: calc( 100% - 178px )
+    justify-self: flex-start
+
+
+
+  &__
+
+    &body
+      pt: 50px
+      pos: absolute
+      w: 100%
+      left: -100%
+      top: 72px
+      bg-color: black
+      h: calc( 100vh -  72px)
+      tr: .5s
+      overflow: auto
+
+      &.is-active
+        left: 0
+
+    &list
+      d: flex
+      flex-direction: column
+      ai: center
+      
+
+    &item
+      mt: 20px
+
+    &link
+      text-decoration: none
+      color: var(--theme-text-2)
+
+    &social-links
+      d: flex
+      ai: center
+      jc: space-between
+
+
+    &search
+      mr: 0px
+      cursor: pointer
+      w: 19px
+      h: 18px
+      filter: brightness(0)
+      tr: .3s
+
+      +mq-lg
+        filter: brightness(10)
+        w: 13px
+        h: 12px
+        mr: 12px
+      
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          trans: scale(1.2)
+
+    &social-link
+      ml: 12px
+      d: none
+      tr: .3s
+
+      +mq-lg
+        d: block
+
+      &:first-child
+        ml: 0px
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          trans: scale(1.2)
+
+.menu-icon
+  pos: relative
+  d: block
+  w: 20px
+  h: 20px
+  order: 1
+  
+
+  +mq-lg
+    d: none
+
+  &.is-active
+    .menu-icon
+      &__
+        &line
+          trans: scale(0)
+
+          &--top
+            trans: rotate(-45deg)
+            top: 9px
+          
+          &--bottom
+            trans: rotate(45deg)
+            bottom: 8px
+
+
+  &__
+    &line
+      pos: absolute
+      w: 100%
+      h: 3px
+      bg-color: var(--theme-primary-black)
+      left: 0
+      tr: .3s
+
+      &--top
+        top: 0
+
+      &--middle
+        top: 9px
+        
+      &--bottom
+        bottom: 0
+
+.header-search
+  pos: absolute
+  left: 0
+  top: 72px
+  w: 100%
+  h: 60px
+  pa: 15px
+  d: none
+  ai: center
+  jc: space-between
+
+  +mq-lg
+    top: 106px
+
+  &.is-active
+    d: flex
+
+
+  &__
+    &input
+      w: 100%
+      h: 30px
+      br: none
+      outline: none
+      fs: 15px
+      fw: 300
+      pa: 10px
+    
+    &button
+      w: 30px
+      h: 30px
+      ml: 15px
+      bg: transparent
+      br: none
+      outline: none
+      cursor: pointer

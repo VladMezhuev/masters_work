@@ -1,0 +1,29 @@
+.news
+  mb: 40px
+  &__
+    &image-wrapper
+      d: block
+      mb: 20px
+      overflow: hidden
+      pos: relative
+      h: 222px
+      w: 100%
+
+      +mq-xl
+        w: 369px
+
+    &image
+      tr: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          trans: scale(1.1)
+
+    &date
+      pos: absolute
+      bottom: 20px
+      right: 25px
+      color: #fffefe
+      text-shadow: black 0 0 2px
+      fs: 14px
+      fw: 700

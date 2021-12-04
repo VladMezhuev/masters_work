@@ -1,0 +1,50 @@
+.review-card
+  d: flex
+  flex-direction: column
+  br-bottom: 1px solid#d7d7d7
+  jc: space-between
+  bg-color: var(--theme-accent-white)
+  pa: 10px 10px 15px 10px
+
+  +mq-lg
+    flex-direction: row
+    pa: 30px 60px 35px 30px
+
+
+  &:last-child
+    br: none
+
+  &__
+    &persone-info
+      align-self: center
+    
+      +mq-lg
+        align-self: flex-start
+        mr: 30px
+
+
+    &persone
+      w: 66px
+      h: 66px
+
+    &review-text
+      color: var(--theme-text-3)
+      d: flex
+      flex-direction: column
+      ai: center
+
+      +mq-lg
+        ai: flex-start
+
+    &persone-name
+      color: var(--theme-text-7)
+      fw: 700
+      mb: 10px
+
+    &review
+      mt: 20px
+      ta: center
+
+      +mq-lg
+        ta: left
+      

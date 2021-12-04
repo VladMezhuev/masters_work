@@ -1,0 +1,115 @@
+.email-form
+  w: 100%
+  pos: relative
+  pa: 20px 0
+
+  &__
+    &bg
+      pos: absolute
+      top: 0
+      left: 0
+      right: 0
+
+.email-form-wrapper
+  pos: relative
+  br: 1px solid rgba(255, 255, 255, .25)
+  pa: 40px 15px
+  h: 300px
+
+  +mq-lg
+    h: auto
+    pa: 90px 35px
+  
+  +mq-xl
+    w: 1100px
+
+  &__    
+    &text
+      ft: uppercase
+      white-space: nowrap
+      fs: 20px
+
+      +mq-xl
+        fs: 25px
+        w: 35%
+        ma: 0
+        pa: 0
+
+.form-wrapper
+  d: flex
+  ai: center
+  flex-wrap: wrap
+  pos: relative
+  w: 100%
+  h: 60px
+  mt: 20px
+  z-index: 4
+
+  +mq-xl
+    pos: absolute
+    top: 50%
+    trans: translateY(-50%)
+    mt: 0px
+    right: -50px
+    w: 660px
+
+  &::before
+    d: none
+    content: ""
+    pos: absolute
+    top: 50%
+    left: -50px
+    w: 71px
+    h: 3px
+    bg-color: var(--theme-accent-grey)
+    z-index: 1
+
+    +mq-xl
+      d: block
+  
+  
+  
+  &__
+    &input
+      br: 0
+      outline: none
+      w: 100%
+      h: 100%
+      pa: 20px 25px
+
+      z-index: 2
+
+      +mq-lg
+        w: 75%
+    
+    &submit
+      h: 100%
+      w: 100%
+      d: flex
+      br: none
+      outline: none
+      pa: 0px 26px
+      cursor: pointer
+      mt: 20px
+
+      +mq-lg
+        pa: 20px 25px
+        w: 25%
+        mt: 0px
+
+    &image
+      trans: rotate(90deg)
+
+
+div
+  &.error
+    position: absolute
+    bottom: -20px
+
+input
+  &.error
+    br-bottom: 2px solid red
+    bg-color: var(--theme-accent-white)
+    bg-image: url(../img/form-error.svg)
+    bg-repeat: no-repeat
+    bg-position: 95% center

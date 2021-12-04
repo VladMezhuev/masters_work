@@ -1,0 +1,125 @@
+.uber-map 
+  bg-color: var(--theme-accent-white)
+  pa: 20px 0
+  color: var(--theme-text-3)
+
+  +mq-lg
+    pa: 56px 0 66px
+.uber-map-wrapper 
+
+  &__
+    &top
+      d: flex
+      ai: center
+      flex-direction: column
+      mb: 20px
+
+      +mq-lg
+        flex-direction: row
+        jc: space-between
+        mb: 50px
+
+    &subtitle
+      fs: 15px
+      color: var(--theme-text-7)
+      line-height: 22px
+      fw: 300
+
+    &span
+      fw: 700
+
+    &adress-category
+      d: flex
+      mb: 10px
+
+      +mq-lg
+        mb: 40px
+    
+    &image-wrapper 
+      w: 25px
+      h: 30px
+      mr: 50px
+
+    &image
+      d: block
+      w: 100%
+      h: 100%
+
+    &top-info
+      mb: 10px
+
+      +mq-lg
+        mb: 30px
+    
+    &bottom
+      d: flex
+      flex-direction: column-reverse
+
+      +mq-lg
+        flex-direction: row
+        jc: space-between      
+    
+    &column-map
+      w: 100%
+      h: 488px
+      pos: relative
+
+      +mq-lg
+        w: 70%
+
+      +mq-xl
+        w: 800px
+    
+    &column-location
+      mt: 20px
+
+      +mq-lg
+        mt: 0px
+    
+    &text
+      td: none
+      color: inherit
+
+    &location-info
+      d: flex
+      flex-direction: column
+
+.uber-map-container
+  w: 100%
+  h: 100%
+  filter: grayscale(10)
+
+.info-window
+  w: 150px
+  h: 180px
+  flex-direction: column
+  ai: center
+  d: none
+  color: #8d8d8d
+  bg-color: var(--theme-accent-white)
+
+  +mq-lg
+    w: 256px
+    h: 229px
+    pa: 27px 25px
+
+
+  &.is-active
+    d: flex
+
+  &__
+    &top
+      mb: 15px
+      ta: center
+
+    &middle
+      d: flex
+      flex-direction: column
+      ai: center
+      ta: center
+    
+    &bottom
+      w: 100%
+      h: 57px
+      jc: center
+      mt: 28px

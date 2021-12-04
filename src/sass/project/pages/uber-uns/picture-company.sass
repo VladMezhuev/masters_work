@@ -1,0 +1,41 @@
+.picture-company
+  bg-color: var(--theme-accent-main)
+  pa: 80px 0 90px
+
+.picture-company-wrapper
+  &__
+    &top
+      mb: 40px
+
+    &bottom 
+      d: flex
+      ai: center
+      jc: space-between
+      flex-wrap: wrap
+      
+
+      +mq-sm
+        ma: 0 -5px
+
+    &column
+      w: 100%
+      h: 261px
+      mt: 30px
+
+      +mq-sm
+        w: 50%
+        pa: 0 15px
+      
+      +mq-lg
+        w: 25%
+    
+    &picture-card 
+      w: 100%
+      h: 100%
+      overflow: hidden
+
+    &image
+      tr: .5s
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          trans: scale(1.1)

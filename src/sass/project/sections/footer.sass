@@ -1,0 +1,126 @@
+.footer
+  pa: 35px 0
+  bg-color: var(--theme-accent-dark)
+
+.footer-wrapper
+  &__
+    &top
+      d: flex
+      flex-direction: column
+      ai: center
+      mb: 50px
+
+      +mq-lg
+        flex-direction: row
+        jc: space-between
+        mb: 70px
+
+    &logo-wrapper
+      w: 130px
+      h: 40px
+
+.footer-links
+  d: flex
+  ai: center
+  flex-direction: column
+
+  +mq-lg
+    flex-direction: row
+    jc: space-between
+
+.footer-links-wrapper
+  d: flex
+  ai: center
+  flex-direction: column
+  mt: 40px
+
+  +mq-lg
+    flex-direction: row
+    jc: space-between
+    ml: 30px
+    mt: 0px
+
+  +mq-xl
+    ml: 70px
+
+  &:first-child
+    ml: 0px
+
+  &__
+    &list
+      d: flex
+      ai: center
+      jc: space-between
+      mt: 20px
+
+      +mq-lg
+        ml: 15px
+        mt: 0px
+
+      +mq-xl
+        ml: 30px
+
+    &image-wrapper
+      w: 18px
+      h: 18px
+
+    &link-image
+      d: block
+
+    &link
+      color: var(--theme-text-1)
+      fs: $type-font-size-xs
+      ml: 9px
+      td: none
+      tr: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-2)
+
+.footer-menu
+  d: flex
+  ai: center
+  flex-direction: column
+
+  +mq-lg
+    flex-direction: row
+  &__
+    &list
+      d: flex
+      ai: center
+      flex-direction: column
+
+      +mq-lg
+        flex-direction: row
+        ml: 160px !important
+
+    &item
+      mt: 20px
+
+      +mq-lg
+        ml: 30px
+        mt: 0px
+
+    &link
+      color: var(--theme-text-2)
+      td: none
+      tr: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-1)
+
+    &angepast
+      d: block
+      color: var(--theme-text-1)
+      mt: 45px
+      td: none
+      tr: .3s
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          color: var(--theme-text-2)
+
+      +mq-lg
+        d: none

@@ -1,0 +1,93 @@
+.cube-section
+  pos: relative
+  bg-color: var(--theme-accent-white)
+  h: 300px
+  d: none
+
+  +mq-lg
+    d: block
+
+  &::after
+    content: 'EMOTION & DESIGN'
+    pos: absolute
+    bottom: 0
+    left: 2%
+    right: 2%
+    ta: center
+    color: var(--theme-text-10)
+    opacity: 0.68
+    ft: uppercase
+    fs: 9vw
+    fw: 700
+
+.cube-wrapper
+  d: flex
+  ai: center
+  jc: space-between
+  pos: relative
+  w: 100%
+  flex-wrap: wrap
+  z-index: 2
+  pa: 0 15px
+  
+
+  &__
+    &scene
+      w: 200px
+      h: 200px
+      perspective: 800px
+      pos: relative
+      mt: -300px
+  
+.cube
+  w: 100%
+  h: 100%
+  pos: relative
+  transform-style: preserve-3d
+  tr: transform 1s
+  trans: translateZ(0px) rotateY(15deg) translateY(200px)
+
+  
+  &__
+    &face
+      pos: absolute
+      w: 200px
+      h: 200px
+      br: 1px solid var(--theme-primary-main)
+      tr: 1s
+      d: flex
+      ai: center
+      jc: center
+      &--front
+        trans: rotateY(0deg) translateZ(100px)
+        bg-image: url('../img/main-page/cube1.png')
+      &--back
+        trans: rotateY(180deg) translateZ(100px)
+        bg-image: url('../img/main-page/cube-hover.png')
+        bg-position: top center
+      &--right
+        trans: rotateY(90deg) translateZ(100px)
+        bg-color: var(--theme-primary-black)
+      &--left
+        trans: rotateY(-90deg) translateZ(100px)
+        bg-color: var(--theme-primary-black)
+      &--top
+        trans: rotateX(90deg) translateZ(100px)
+        bg-color: var(--theme-primary-black)
+
+    &link
+      td: none
+      color:  var(--theme-text-7)
+    
+    &text
+      color: var(--theme-text-1)
+  
+  .cube-text
+    ft: uppercase
+    letter-spacing: 5px
+    fs: 23px
+    fw: 400
+
+  @media (hover: hover) and (pointer: fine)
+    &:hover
+      trans: translateZ(0px) rotateY(-160deg) translateY(200px)

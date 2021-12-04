@@ -1,0 +1,55 @@
+include ../../../mixins/index
+
++b.projekt-slider
+  +e.projekt-slider-wrapper
+    +b.projekt-slider-bg.swiper
+      +e.wrapper.swiper-wrapper
+        +e.slide.swiper-slide.img.IMG(src="../../../static/img/projekt/projekt-bg1.png")
+        +e.slide.swiper-slide.img.IMG(src="../../../static/img/projekt/projekt-bg2.png")
+        +e.slide.swiper-slide.img.IMG(src="../../../static/img/projekt/projekt-bg3.png")
+        +e.slide.swiper-slide.img.IMG(src="../../../static/img/projekt/projekt-bg4.png")
+        +e.slide.swiper-slide.img.IMG(src="../../../static/img/projekt/projekt-bg5.png")
+    +b.projekt-breadcrumbs 
+      +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+        +b.breadcrumbs
+            +e.list.UL 
+              +e.item.LI
+                +e.link.text.--medium.A(href="#") Home
+                +e.slash.SPAN /
+                +e.link.text.--medium.A(href="#") Some page
+                +e.slash.SPAN /
+                +e.link.text.--medium.A(href="#") Some page
+                +e.slash.SPAN /
+  +b.projekt-content.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.projekt-slider-navigation 
+      +e.prev.projekt-control.projekt-slider-prev.IMG(src="../../../static/img/projekt/prev.png")
+      +e.next.projekt-control.projekt-slider-next.IMG(src="../../../static/img/projekt/next.png")
++b.projekt-main 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.projekt-main-wrapper 
+      +e.title.H2 Template page
+      +b.projekt-section 
+        +e.section-name.--side
+          +e.title.H3 DESCRIPTION
+          +e.description-text.text.--xs.--medium.P Lorem ipsum dolor sit amet, in has dico nulla indoctum, duo tibique perfecto liberavisse ex. Id postea doming utamur qui. Mea labore viderer gloriatur cu, iriure principes ne qui. Tempor maiestatis duo ei, cum vero utinam reprimique an.
+        +e.section-name
+          +e.title.H3 PRODUKTE
+          +e.image-list 
+            +e.image-wrapper 
+              +e.image.img.IMG(src="../../../static/img/projekt/produkte1.png")
+            +e.image-wrapper 
+              +e.image.img.IMG(src="../../../static/img/projekt/produkte5.png")
+            +e.image-wrapper 
+              +e.image.img.IMG(src="../../../static/img/projekt/produkte3.png")
+            +e.image-wrapper 
+              +e.image.img.IMG(src="../../../static/img/projekt/produkte4.png")
+            +e.image-wrapper 
+              +e.image.img.IMG(src="../../../static/img/projekt/produkte5.png")
+        +e.section-name.--side
+          +e.title.H3 TAGS 
+          +e.wrapper 
+            +e.item.SPAN  KATEGORIEN 1 
+            +e.item.SPAN  KATEGORIEN 1 
+            +e.item.SPAN  KATEGORIEN 1 
+            +e.item.SPAN  KATEGORIEN 1 
+            +e.item.SPAN  KATEGORIEN 1 

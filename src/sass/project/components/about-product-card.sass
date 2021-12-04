@@ -1,0 +1,59 @@
+.about-product-card 
+  z-index: 2
+  pos: relative
+  d: flex
+  ai: flex-start
+  flex-direction: column
+  w: 100%
+  pa: 10px 0
+  bg-color: var(--theme-accent-white)
+  overflow: hidden
+
+  +mq-lg
+    flex-direction: row
+    jc: space-between
+    pa: 68px 0 41px
+
+
+  &__
+    &column
+      &--
+        &side
+          w: 100%
+
+          +mq-lg
+            w: 25%
+
+        &center
+          w: 100%
+
+          +mq-lg
+            w: 50%
+            pa: 0 20px
+
+        &left
+          ta: center
+        
+        &right
+
+          +mq-lg
+            pl: 60px
+    &text
+      color: var(--theme-text-3)
+      ta: center
+
+      +mq-lg
+        mt: 0px
+        ta: left
+
+    &title
+      color: var(--theme-text-7)
+      fs: $type-font-size-lg
+      ta: center
+      mb: 10px
+      mt: 15px
+
+      +mq-lg
+        mb: 25px
+        mt: 0px
+        ta: left

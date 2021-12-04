@@ -1,0 +1,10 @@
+include ./../../../node_modules/bemtopuginvue/bemto.pug
+
+mixin filterCard(cardData = [])
+  each item in cardData
+    +e(class='column ' + item.class)#filter-item
+      +b.projekte
+        +e.image-wrapper.A(href= item.link)
+          +e.image.img.IMG(src="../../../static/img/" + item.image)
+          +e.hover= item.class
+        +e.name.picture-name.A(href= item.link)= item.name

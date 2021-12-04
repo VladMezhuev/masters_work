@@ -1,0 +1,110 @@
+.filter-projekte
+  pos: relative
+
+.filter-bar 
+  w: 100%
+  h: 87px
+  d: flex
+  flex-wrap: wrap
+  ai: center
+  bg-color: var(--theme-accent-white)
+  pa: 0 7px
+  mt: -35px
+
+  +mq-md
+    pa: 0 30px
+
+  &__
+    &list
+      w: 100%
+      d: flex
+      ai: center
+      jc: space-between
+      flex-wrap: wrap
+    
+    &item
+      pa: 5px
+      mr: 15px
+
+      +mq-md
+        mr: 30px
+
+
+    &filter-link
+      fs: 12px
+      fw: 300
+      line-height: 22px
+      td: uppercase 
+      color: var(--theme-text-7)
+      tr: .3s
+      pos: relative
+      cursor: pointer
+
+      +mq-md
+        fs: 15px
+        
+
+      &.is-active
+        fw: 700    
+
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          fw: 700
+
+.projekte-wrapper
+  d: flex
+  ai: center
+  jc: space-between
+  flex-wrap: wrap
+
+  +mq-lg
+    ma: 34px -5px 0px
+
+  &__
+    &column
+      w: 100%
+      mb: 45px
+
+      +mq-md
+        w: 50%
+        pa: 0 15px
+
+      +mq-lg
+        w: 33.3%        
+
+.projekte
+  d: flex
+  flex-direction: column
+  w: 100%
+  h: 100%
+  &__
+    &image-wrapper
+      w: 100%
+      h: 222px
+      d: block
+      pos: relative
+    
+      @media (hover: hover) and (pointer: fine)
+        &:hover
+          .projekte
+            &__
+              &hover
+                h: 100%
+                fs: 15px
+    
+    &hover
+      pos: absolute
+      top: 0
+      left: 0
+      w: 100%
+      h: 0px
+      d: flex
+      ai: center
+      jc: center
+      td: none
+      td: uppercase
+      color: var(--theme-text-1)
+      bg-color: rgba(0, 0, 0, .3)
+      tr: .5s
+      fs: 0px
+      fw: 700

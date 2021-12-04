@@ -1,0 +1,23 @@
+include ../../../mixins/index
+
++b.error-404.SECTION
+  +e.bg-wrapper 
+    +e.bg.img.IMG(src='../../../static/img/404.png')
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.oops-info 
+      +e.title.H2 Oops! That page can’t be found.
+      +e.subtitle.H3 Oops! That page can’t be found.
+      +e.search-form-wrapper 
+        +b.form-404.js-form.FORM(
+          data-method='POST',
+          data-action='https://httpbin.org/post'
+        )
+          +e.input.INPUT(
+            type="search"
+            placeholder='Search for'
+            name="error-search"
+            id="error-search"
+            data-rule="required"
+          )
+          +e.btn.btn.INPUT(type="submit" value="search")
+

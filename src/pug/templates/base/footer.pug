@@ -1,0 +1,48 @@
+include ../../mixins/index
+
++b.footer.FOOTER 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.footer-wrapper 
+      +e.top 
+        +e.logo-wrapper.A(href="../main/main.html") 
+          +e.logo.img.IMG(src="../../../static/img/main-page/logo.png")
+        
+        +b.footer-links
+          +b.footer-links-wrapper
+            +e.text.text.--md.--medium.P GET IN TOUCH WITH US
+            +e.list.--row
+              +e.image-wrapper.A(href="#")
+                +e.link-image.IMG(src="../../../static/icons/dark-facebook.svg")
+              +e.link.A(href="#") facebook
+            +e.list
+              +e.image-wrapper.A(href="#")
+                +e.link-image.IMG(src="../../../static/icons/dark-linkedin.svg")
+              +e.link.A(href="#") linkedin
+          
+          +b.footer-links-wrapper
+            +e.text.text.--md.--medium.P OUR CONTACS:
+            +e.list
+              +e.image-wrapper.A(href="#")
+                +e.link-image.IMG(src="../../../static/icons/dark-message.svg")
+              +e.link.A(href="#") test@testmail.info
+            +e.list
+              +e.image-wrapper.A(href="#")
+                +e.link-image.IMG(src="../../../static/icons/dark-phone.svg")
+              +e.link.A(href="#") 8-800-333-81-82
+      
+      +e.bottom
+        +b.footer-menu
+          +b.language-block.--menu
+            +e.language.--active.text.--xs.--medium.A(href="#") uk
+            +e.line.text.--xs.--medium.SPAN |
+            +e.language.text.--xs.--medium.A(href="#") ru
+          +e.list.UL 
+            +e.item.LI
+              +e.link.text.--medium.--xs.A(href="../../pages/uber-uns/uber-uns.html") Про нас 
+            +e.item.LI
+              +e.link.text.--medium.--xs.A(href="../../pages/produkte/produkte.html") Завдання
+            +e.item.LI
+              +e.link.text.--medium.--xs.A(href="../../pages/projekte/projekte.html") Роботи
+            +e.item.LI
+              +e.link.text.--medium.--xs.A(href="../../pages/news/news.html") Новини
+          +e.angepast.text.--xs.--medium.A(href="#") Angepasst / Entworfen von WEBish

@@ -1,0 +1,43 @@
+.fachpartner
+  color: var(--theme-accent-main)
+  pos: relative
+
+.fachpartner-wrapper
+  pos: relative
+  
+.map
+  w: 100%
+  h: 535px
+  filter: grayscale(10)
+  z-index: 1
+
+.filter-items
+  mt: 35px
+  &__
+    &row
+      d: flex
+      ai: center
+      jc: space-between
+      flex-wrap: wrap
+
+      +mq-md
+        ma: 0 -5px
+
+      +mq-lg
+        ma: 0 -15px
+
+    &column
+      w: 100%
+      h: 155px
+      mb: 22px
+
+      +mq-md
+        w: 50%
+        pa: 0 5px
+
+      +mq-lg
+        w: 33.3%
+        pa: 0 15px
+
+
+    

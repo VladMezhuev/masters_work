@@ -1,0 +1,51 @@
+.projekt-section 
+  color: var(--theme-text-7)
+  d: flex
+  flex-direction: column
+  pa: 10px 5px 30px
+  bg-color: var(--theme-accent-white)
+
+
+  +mq-lg
+    flex-direction: row
+    pa: 30px 15px 70px
+
+
+  &__
+    &section-name
+      d: flex
+      flex-direction: column
+
+      +mq-lg
+        w: 50%
+        pa: 0 20px
+
+ 
+      &--side
+
+        +mq-lg
+          w: 25%
+          pa: 0 15px
+
+    &image-list 
+      d: flex
+      ai: center
+      jc: space-between
+
+    &image-wrapper
+      w: 50px
+      h: 50px
+
+      +mq-sm
+        w: 84px
+        h: 84px
+
+    &title
+      mt: 10px
+      mb: 10px
+      +mq-lg
+        mt: 0px
+        mb: 30px
+
+    &description-text, &item
+      color: var(--theme-text-3)

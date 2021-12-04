@@ -1,0 +1,69 @@
+include ../../../mixins/news-cards
+include ../../../mixins/index
+
+-
+  const newsCards = [
+    [{
+      name: "Новина 1",
+      image: "news/news1.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 2",
+      image: "news/news2.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 3",
+      image: "news/news3.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 4",
+      image: "news/news4.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 5",
+      image: "news/news5.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 6",
+      image: "news/news6.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 7",
+      image: "news/news7.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 8",
+      image: "news/news8.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }],
+    [{
+      name: "Новина 9",
+      image: "news/news9.png",
+      date: "05.12.2021",
+      link: "../nachrichtentitel/nachrichtentitel.html"
+    }]
+  ]
+
++b.news-list.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.news-list-wrapper 
+      +e.items 
+        each item in newsCards
+          +e.column 
+            +newsCards(item)
+    include ../../elements/pagination

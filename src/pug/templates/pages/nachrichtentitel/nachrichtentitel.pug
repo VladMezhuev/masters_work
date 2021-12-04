@@ -1,0 +1,19 @@
+extends ../../base/base
+
+
+block header 
+  include ../../base/header
+
+block content 
+  +b.main.MAIN
+    include ../../../mixins/category
+    include ../../../mixins/index
+    -
+      const breadcrumbs = ['Home', 'Some page', 'Some page 2'],
+            category = 'Новина',
+            info = ['05.12.2021'],
+            subcategory = [],
+            image = 'news.png'
+
+    +category(breadcrumbs, category, info, subcategory, image)
+    include ../../sections/nachrichtentitel/nachrichtentitel

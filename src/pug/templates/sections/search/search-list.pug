@@ -1,0 +1,105 @@
+include ../../../mixins/filter-card
+include ../../../mixins/news-cards
+include ../../../mixins/news-card
+include ../../../mixins/index
+
+-
+  const filterCards = [
+    [{
+      name: "Name des Projekts",
+      image: "projekte/projekte1.png",
+      class: "office",
+    }],
+    [{
+      name: "Name des Projekts",
+      image: "projekte/projekte2.png",
+      class: "educational",
+    }],
+    [{
+      name: "Name des Projekts",
+      image: "projekte/projekte3.png",
+      class: "office",
+    }],
+    [{
+      name: "Name des Projekts",
+      image: "projekte/projekte4.png",
+      class: "hotel",
+    }],
+    [{
+      name: "Name des Projekts",
+      image: "projekte/projekte5.png",
+      class: "educational",
+    }],
+    [{
+      name: "Name des Projekts",
+      image: "projekte/projekte6.png",
+      class: "office",
+    }],
+  ]
+
+-
+  const newsCards = [
+    [{
+      name: "Nachrichtentitel",
+      image: "news/news1.png",
+      date: "22.08.2018",
+    }],
+    [{
+      name: "Nachrichtentitel",
+      image: "news/news2.png",
+      date: "22.08.2018",
+    }],
+    [{
+      name: "Nachrichtentitel",
+      image: "news/news3.png",
+      date: "22.08.2018",
+    }],
+  ]
+
+- 
+  const productCards2 = [
+    {
+      image: "product1.png",
+      title: "Name des Produkte",
+    },
+    {
+      image: "product2.png",
+      title: "Name des Produkte",
+    },
+    {
+      image: "product3.png",
+      title: "Name des Produkte",
+    },
+    {
+      image: "product4.png",
+      title: "Name des Produkte",
+    },
+  ]
+
++b.search-section.SECTION 
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.search-section-wrapper 
+      +e.top 
+        +b.search-part.FORM(action='../404/404.html')
+          +e.input.INPUT(type="search")
+          +e.btn.btn.INPUT(type="submit" value="search")
+        +e.title.title.SPAN Search Result For: "Luxed"
+
+      +b.projekte-wrapper#projekte-grid
+        each card in filterCards
+          +filterCard(card)
+      include ../../elements/pagination
+
+      +b.product-cards-wrapper 
+        +e.row
+          each card in productCards2
+            +e.cols
+              +productsCard(card)
+      include ../../elements/pagination
+
+      +b.news-list-wrapper 
+        +e.items 
+          each item in newsCards
+            +e.column 
+              +newsCards(item)
+      include ../../elements/pagination
